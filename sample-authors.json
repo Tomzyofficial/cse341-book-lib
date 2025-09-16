@@ -1,0 +1,51 @@
+[
+  {
+    "fullname": "Dan Brown",
+    "country": "USA",
+    "gender": "Male",
+    "birthdate": "1964-06-27"
+  },
+  {
+    "fullname": "Walter Isaacson",
+    "country": "USA",
+    "gender": "Male",
+    "birthdate": "1955-05-20"
+  },
+  {
+    "fullname": "Yuval Noah Harari",
+    "country": "Israel",
+    "gender": "Male",
+    "birthdate": "1976-07-22"
+  },
+  {
+    "fullname": "James Clear",
+    "country": "USA",
+    "gender": "Male",
+    "birthdate": "1986-02-09"
+  },
+  {
+    "fullname": "Alex Michaelides",
+    "country": "Greece",
+    "gender": "Male",
+    "birthdate": "1977-02-09"
+  },
+  {
+    "fullname": "Tara Westover",
+    "country": "USA",
+    "gender": "Female",
+    "birthdate": "1986-09-27"
+  },
+  {
+    "fullname": "J.R.R. Tolkien",
+    "country": "United Kingdom",
+    "gender": "Male",
+    "birthdate": "1892-03-01"
+  },
+
+  {
+    "fullname": "Chinua Achebe",
+    "country": "Nigeria",
+    "gender": "Male",
+    "birthdate": "1930-11-16"
+  }
+]

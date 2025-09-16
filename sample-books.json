@@ -1,0 +1,72 @@
+[
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "isbn": "9780307474278",
+    "genre": "Mystery",
+    "publicationYear": 2003,
+    "pages": 689,
+    "description": "A mystery thriller that follows symbologist Robert Langdon as he investigates a murder in the Louvre Museum.",
+    "available": true
+  },
+  {
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "isbn": "9781451648539",
+    "genre": "Biography",
+    "publicationYear": 2011,
+    "pages": 656,
+    "description": "The exclusive biography of Steve Jobs, based on more than forty interviews with the Apple co-founder.",
+    "available": true
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "isbn": "9780062316097",
+    "genre": "History",
+    "publicationYear": 2014,
+    "pages": 443,
+    "description": "An exploration of how Homo sapiens came to dominate the world, examining the cognitive, agricultural, and scientific revolutions.",
+    "available": true
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "isbn": "9780735211292",
+    "genre": "Self-Help",
+    "publicationYear": 2018,
+    "pages": 320,
+    "description": "A comprehensive guide on how to build good habits and break bad ones, with practical strategies for lasting change.",
+    "available": true
+  },
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "isbn": "9781250301697",
+    "genre": "Mystery",
+    "publicationYear": 2019,
+    "pages": 325,
+    "description": "A psychological thriller about a woman who refuses to speak after allegedly murdering her husband.",
+    "available": false
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "isbn": "9780399590504",
+    "genre": "Biography",
+    "publicationYear": 2018,
+    "pages": 334,
+    "description": "A memoir about a woman who grows up in a survivalist Mormon family and eventually earns a PhD from Cambridge University.",
+    "available": true
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "isbn": "9780544003415",
+    "genre": "Fantasy",
+    "publicationYear": 1954,
+    "pages": 1216,
+    "description": "An epic high-fantasy novel about the quest to destroy the One Ring and defeat the Dark Lord Sauron.",
+    "available": true
+  }
+]
