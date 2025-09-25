@@ -5,9 +5,9 @@ const authController = require("../controllers/authController");
 
 router.get("/login", authController.buildLoginView);
 
-router.get("/auth/google", passport.authenticate("google", { scope: ["profile", "email"] }));
+router.get("/google", passport.authenticate("google", { scope: ["profile", "email"] }));
 
-router.get("/auth/google/callback", passport.authenticate("google", { failureRedirect: "/auth/login" }), (req, res) => {
+router.get("/google/callback", passport.authenticate("google", { failureRedirect: "/auth/login" }), (req, res) => {
    // Successful authentication
    //  res.json({ message: "Authentication successful", user: req.user });
    res.redirect("/auth/dashboard");
