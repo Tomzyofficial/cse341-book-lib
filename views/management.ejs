@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body>
+      <% if (user) { %>
+      <h2>Welcome to the Management <%= user.displayName %></h2>
+      <p>You're now authenticated to access this page. You can manage your account here.</p>
+      <p>Your email: <%= user.email %></p>
+      <a href="/auth/dashboard">Go back to Dashboard</a>
+      <a href="/auth/logout">Logout</a>
+      <% } %> <% if (!user) { %>
+      <h2>You are not logged in.</h2>
+      <p>Please log in to access your management.</p>
+      <a href="/auth/google">Login with Google</a>
+      <% } %>
+   </body>
+</html>

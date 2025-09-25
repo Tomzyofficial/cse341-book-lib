@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body>
+      <% if (user) { %>
+      <h2>Welcome to the Dashboard <%= user.displayName %></h2>
+      <p>You have successfully logged in using Google OAuth2.</p>
+      <p>Your email: <%= user.email %></p>
+      <a href="/auth/management">Go to Management</a>
+      <a href="/auth/logout">Logout</a>
+      <% } %> <% if (!user) { %>
+      <h2>You are not logged in.</h2>
+      <p>Please log in to access your dashboard.</p>
+      <a href="/auth/google">Login with Google</a>
+      <% } %>
+   </body>
+</html>
