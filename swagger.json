@@ -5,9 +5,9 @@
       "description": "This is Book API",
       "version": "1.0.0"
    },
-   "host": "localhost:8080",
+   "host": "cse341-book-lib.onrender.com",
    "basePath": "/",
-   "schemes": ["http"],
+   "schemes": ["https"],
    "paths": {
       "/authors": {
          "get": {
