@@ -5,6 +5,11 @@ const { param, body, validationResult } = require("express-validator");
 
 const authorsController = require("../controllers/authorsController");
 
+const { isAuthenticated } = require("../middleware");
+
+// Apply authentication middleware to all routes in this router
+router.use(isAuthenticated);
+
 // Validation middleware
 const validateRequest = async (req, res, next) => {
    const errors = validationResult(req);

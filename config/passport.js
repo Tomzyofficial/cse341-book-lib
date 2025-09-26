@@ -21,7 +21,8 @@ passport.use(
       {
          clientID: process.env.GOOGLE_CLIENT_ID,
          clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-         callbackURL: "https://cse341-book-lib.onrender.com/auth/google/callback",
+         callbackURL:
+            process.env.NODE_ENV === "development" ? process.env.GOOGLE_DEV_CLIENT_CALLBACK_URL : process.env.GOOGLE_PROD_CLIENT_CALLBACK_URL,
       },
       async (accessToken, refreshToken, profile, done) => {
          let user = await User.findOne({ googleId: profile.id });

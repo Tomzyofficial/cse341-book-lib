@@ -16,6 +16,8 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger.json");
 
 const port = process.env.PORT || 8080;
+
+const authenticated = require("./middleware");
 const app = express();
 
 app.set("view engine", "ejs")
@@ -41,7 +43,7 @@ app.set("view engine", "ejs")
    .use("/books", bookRoute)
    .use("/authors", authorRoute)
 
-   .use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+   .use("/api-docs", authenticated.isAuthenticated, swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
    .use((err, req, res, next) => {
       console.error(err.stack);

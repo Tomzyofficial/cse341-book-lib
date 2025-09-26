@@ -2,6 +2,10 @@ const express = require("express");
 const router = express.Router();
 const { body, param, validationResult } = require("express-validator");
 const bookController = require("../controllers/booksController");
+const { isAuthenticated } = require("../middleware");
+
+// Apply authentication middleware to all routes in this router
+router.use(isAuthenticated);
 
 // Validation middleware
 const validateRequest = (req, res, next) => {
